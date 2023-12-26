@@ -4,4 +4,8 @@ const registerUser = asyncHandler(async (req, res) => {
   res.status(200).json({ message: "Harshal Warade" });
 });
 
-export { registerUser };
+const displayMsg = asyncHandler(async (req, res) => {
+  res.status(200).send("This is a msg to display!");
+});
+
+export { registerUser, displayMsg };
